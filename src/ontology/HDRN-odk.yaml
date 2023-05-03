@@ -1,0 +1,22 @@
+id: HDRN
+title: Health Data Research Network Ontology
+github_org: OpenLHS
+repo: HDRN
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - full
+  - base
+primary_release: full
+export_formats:
+  - owl
+  - json
+import_group:
+  products:
+    - id: HOSO
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/HOSO/main/HOSO-full.owl"
+    - id: PDRO
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/PDROV2/main/PDRO-full.owl"
+robot_java_args: "-Xmx8G"

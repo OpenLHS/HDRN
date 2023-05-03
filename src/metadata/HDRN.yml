@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/HDRN
+
+idspace: HDRN
+base_url: /obo/HDRN
+
+products:
+- HDRN.owl: https://raw.githubusercontent.com/OpenLHS/HDRN/main/HDRN.owl
+- HDRN.obo: https://raw.githubusercontent.com/OpenLHS/HDRN/main/HDRN.obo
+
+term_browser: ontobee
+example_terms:
+- HDRN_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OpenLHS/HDRN/v
+
+- prefix: /tracker/
+  replacement: https://github.com/OpenLHS/HDRN/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/HDRN?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OpenLHS/HDRN/main/
+
