@@ -3,28 +3,33 @@
     "id" : "http://purl.obolibrary.org/obo/HDRN/HDRN-base.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Jean-François Ethier"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Mark McGilchrist"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Paul Fabry"
+      }, {
         "pred" : "http://purl.org/dc/elements/1.1/type",
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
       }, {
         "pred" : "http://purl.org/dc/terms/description",
-        "val" : "None"
+        "val" : "HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada."
       }, {
         "pred" : "http://purl.org/dc/terms/license",
-        "val" : "https://creativecommons.org/licenses/unspecified"
+        "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://purl.org/dc/terms/title",
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-03"
+        "val" : "2023-05-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-05-03/HDRN-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-05-05/HDRN-base.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/HDRN_0000000",
-      "lbl" : "root node",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
       "type" : "PROPERTY"
