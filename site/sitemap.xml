@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://OpenLHS.github.io/HDRN/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/cite/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/contributing/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/ContinuousIntegration/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/EditorsWorkflow/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/ManageDocumentation/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/ReleaseWorkflow/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/RepoManagement/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/RepositoryFileStructure/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/SettingUpDockerForODK/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/UpdateImports/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/HDRN/odk-workflows/components/</loc>
-         <lastmod>2023-05-03</lastmod>
+         <lastmod>2023-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

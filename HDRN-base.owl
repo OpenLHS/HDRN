@@ -9,12 +9,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HDRN/HDRN-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-05-03/HDRN-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-05-05/HDRN-base.owl"/>
+        <dc:contributor>Jean-François Ethier</dc:contributor>
+        <dc:contributor>Mark McGilchrist</dc:contributor>
+        <dc:contributor>Paul Fabry</dc:contributor>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description>None</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <terms:description xml:lang="en">HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Health Data Research Network Ontology</terms:title>
-        <owl:versionInfo>2023-05-03</owl:versionInfo>
+        <owl:versionInfo>2023-05-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,6 +30,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -57,25 +66,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
         <rdfs:label>title</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/HDRN_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HDRN_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
