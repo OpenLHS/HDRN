@@ -25,11 +25,297 @@
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-05"
+        "val" : "2023-05-10"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-05-05/HDRN-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-05-10/HDRN-base.json"
     },
     "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000010",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000012",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000019",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000022",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000023",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000026",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000028",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000029",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000030",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000031",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000032",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000033",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000034",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000035",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000036",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000037",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000038",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000039",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000040",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000041",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000042",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000043",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000044",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000045",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000050",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000051",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000052",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000053",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000054",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000055",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000056",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000060",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000068",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000069",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000138",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000139",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare organization clinical visit whom some parts occurs in a healthcare facility."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000142",
+      "meta" : {
+        "definition" : {
+          "val" : "A Canadian postal address that enables an agent to locate a facility."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000018",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000019",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000020",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000021",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000022",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000023",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000025",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000070",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000071",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000072",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1",
+          "val" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000042",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000109",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000110",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000114",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000115",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000116",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000117",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1",
+      "lbl" : "HDRNv1",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "First version of set of information items for Health data Research Network Canada" ]
+      }
+    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
       "type" : "PROPERTY"

@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:HDRN="http://purl.obolibrary.org/obo/HDRN#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
@@ -16,14 +17,14 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HDRN/HDRN-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-05-05/HDRN-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-05-10/HDRN-full.owl"/>
         <dc:contributor>Jean-François Ethier</dc:contributor>
         <dc:contributor>Mark McGilchrist</dc:contributor>
         <dc:contributor>Paul Fabry</dc:contributor>
         <terms:description xml:lang="en">HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Health Data Research Network Ontology</terms:title>
-        <owl:versionInfo>2023-05-05</owl:versionInfo>
+        <owl:versionInfo>2023-05-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -412,6 +413,16 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HDRN#HDRNv1 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HDRN#HDRNv1">
+        <rdfs:comment xml:lang="en">First version of set of information items for Health data Research Network Canada</rdfs:comment>
+        <rdfs:label xml:lang="en">HDRNv1</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
@@ -498,6 +509,12 @@ Where we have an annotation assertion
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 
@@ -3313,6 +3330,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000009"/>
         <obo:IAO_0000115 xml:lang="en">A health provider identifier that is used to denote a person authorised to act as a physician.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">physician identifier</rdfs:label>
     </owl:Class>
     
@@ -3507,6 +3525,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A healthcare organisation service delivery that aims at providing a desired effect on the health status of a specified organism. It is usually composed of health procedures and possibly associated ancillary processes.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare organization clinical visit</rdfs:label>
     </owl:Class>
     
@@ -3585,6 +3604,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a public provincial health insurance record.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">public provincial health identifier</rdfs:label>
     </owl:Class>
     
@@ -3595,6 +3615,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a building administered by a healthcare organization for the purpose of providing healthcare to a patient or patient population.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare facility identifier</rdfs:label>
     </owl:Class>
     
@@ -3612,6 +3633,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a healthcare organization.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare organization identifier</rdfs:label>
     </owl:Class>
     
@@ -3622,6 +3644,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000139"/>
         <obo:IAO_0000115 xml:lang="en">A healthcare organisation clinical visit where the patient physically attends to a healthcare facility, but where there is no expectation of providing support for activities of daily living (such as eating and bathing) nor accommodation for the patient.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">outpatient visit</rdfs:label>
     </owl:Class>
     
@@ -3638,6 +3661,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A healthcare organisation clinical visit where there is expectation of providing support for activities of daily living (such as eating and bathing) and accommodation for the patient.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">inpatient visit</rdfs:label>
     </owl:Class>
     
@@ -3648,6 +3672,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">An inpatient visit that does not extend overnight.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">day inpatient visit</rdfs:label>
     </owl:Class>
     
@@ -3664,6 +3689,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A day inpatient visit which includes a surgical procedure.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">day inpatient surgery visit</rdfs:label>
     </owl:Class>
     
@@ -3674,6 +3700,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">An inpatient visit located in a hospital facility requested by a physician, that may extends overnight.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">hospitalization</rdfs:label>
     </owl:Class>
     
@@ -3685,6 +3712,7 @@ It could also includes non professionals like patient attendant but it would exc
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000139"/>
         <obo:IAO_0000115 xml:lang="en">A healthcare organisation clinical visit where there is expectation of providing unplanned, timely, urgent care, including handling life-threatening conditions.
 It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">emergency department visit</rdfs:label>
     </owl:Class>
     
@@ -3704,6 +3732,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000028"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000032"/>
         <obo:IAO_0000115 xml:lang="en">An emergency department visit and an inpatient visit, where there is usually limited accommodation and where the goal is to stabilise a life-threatening condition or decide whether the clinical situation requires a hospitalisation visit.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">emergency department inpatient visit</rdfs:label>
     </owl:Class>
     
@@ -3724,6 +3753,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000032"/>
         <obo:IAO_0000115 xml:lang="en">An emergency department visit and an outpatient visit.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">there is no expectation of providing support for activities of daily living (such as eating and bathing) nor accommodation for the patient</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">emergency department outpatient visit</rdfs:label>
     </owl:Class>
     
@@ -3734,6 +3764,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000026"/>
         <obo:IAO_0000115 xml:lang="en">an outpatient visit where there is expectation of providing unplanned, timely care, but excluding handling life-threatening conditions</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">walk-in clinic visit</rdfs:label>
     </owl:Class>
     
@@ -3750,6 +3781,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">an outpatient visit which includes a surgical procedure</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">outpatient surgery visit</rdfs:label>
     </owl:Class>
     
@@ -3766,6 +3798,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">an outpatient visit which includes a diagnostic procedure</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">outpatient diagnostic visit</rdfs:label>
     </owl:Class>
     
@@ -3785,6 +3818,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000028"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000069"/>
         <obo:IAO_0000115 xml:lang="en">An immediate subsequent visit healthcare organisation visit for a given patient that was participating in another healthcare organisation visit for the same organisation just prior to this visit.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">immediate inpatient subsequent visit</rdfs:label>
     </owl:Class>
     
@@ -3811,6 +3845,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity describing the type of visit that occured prior to an immediate inpatient subsequent visit.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">prior visit category to an inpatient visit</rdfs:label>
     </owl:Class>
     
@@ -3821,6 +3856,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A healthcare organisation visit where the main entity of interest is a still born.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">still born healthcare service</rdfs:label>
     </owl:Class>
     
@@ -3871,6 +3907,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A healthcare organization clinical visit during which a birth statement was produced regarding the birth of the main patient visit beneficiary.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">In the case of human health the specified organism refers to the child born during the visit.</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare birth visit</rdfs:label>
     </owl:Class>
     
@@ -3883,6 +3920,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Patient hospitalized directly from home.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Patient transferred from a healthcare organization emergency department to be hospitalized by a different healthcare organization.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">an inpatient visit that is not immedately following another healthcare organisation clinical visit in the same organisation, and is not a healthcare birth visit</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">inpatient visit from an external location</rdfs:label>
     </owl:Class>
     
@@ -3894,6 +3932,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000032"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000068"/>
         <obo:IAO_0000115 xml:lang="en">An emergency department visit for a given patient that was participating in another healthcare organisation visit involving paramedics just prior to this visit.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">ambulance initiated emergency department visit</rdfs:label>
     </owl:Class>
     
@@ -3904,6 +3943,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A healthcare organization service delivery where the main entity of interest is a human cadaver that was not delivered just prior to this service.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">cadaver service</rdfs:label>
     </owl:Class>
     
@@ -3954,6 +3994,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A healthcare organization clinical visit during which a death statement was produced regarding the death of the main patient visit beneficiary.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">A healthcare organization clinical visit during which the patient died.</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare visit of expiration</rdfs:label>
     </owl:Class>
     
@@ -4052,6 +4093,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
         <obo:IAO_0000115 xml:lang="en">A healthcare organization clinical visit ended at the initiative of the patient without physician approval.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">visit ended by the patient</rdfs:label>
     </owl:Class>
     
@@ -4062,6 +4104,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000050"/>
         <obo:IAO_0000115 xml:lang="en">A visit ended by the patient without notifying the healthcare organization.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">visit ended by the patient without notification</rdfs:label>
     </owl:Class>
     
@@ -4072,6 +4115,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000032"/>
         <obo:IAO_0000115 xml:lang="en">An emergency department visit with a triage encounter but no further encounter.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">triage-only emergency department visit</rdfs:label>
     </owl:Class>
     
@@ -4083,6 +4127,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000032"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000050"/>
         <obo:IAO_0000115 xml:lang="en">An emergency department visit and a visit ended by the patient and some treatment healthcare procedure was provided.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">emergency department visit with partial treatment</rdfs:label>
     </owl:Class>
     
@@ -4094,6 +4139,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a diagnosis related group.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">DRG code</obo:IAO_0000118>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">visit diagnosis related group code</rdfs:label>
     </owl:Class>
     
@@ -4110,6 +4156,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A temporal characterisation that is about the start of a healthcare organisation clinical visit</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare organization clinical visit start charaterisation</rdfs:label>
     </owl:Class>
     
@@ -4126,6 +4173,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A temporal characterisation that is about the finish of a healthcare organisation clinical visit</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare organization clinical visit finish charaterisation</rdfs:label>
     </owl:Class>
     
@@ -4142,6 +4190,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000062"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:comment xml:lang="en">An information content entity that contains the information required to manage the insurance coverage of an insured individual.</rdfs:comment>
         <rdfs:label xml:lang="en">public provincial health insurance record</rdfs:label>
     </owl:Class>
@@ -4245,6 +4294,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000600 xml:lang="en">A healthcare organisation clinical visit for a given patient that was participating in another healthcare organisation clinical visit just prior to this visit.</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">immediate subsequent visit</rdfs:label>
     </owl:Class>
     
@@ -4255,6 +4305,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000068"/>
         <obo:IAO_0000115 xml:lang="en">An immediate subsequent visit where both visits are under the responsability of the same healthcare organisation.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">immediate subsequent visit in same organization</rdfs:label>
     </owl:Class>
     
@@ -4319,6 +4370,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a healthcare provider.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">healthcare provider identifier</rdfs:label>
     </owl:Class>
     
@@ -4345,6 +4397,8 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A healthcare organization clinical visit whom some parts occurs in a healthcare facility.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">facility-supported clinical visit</rdfs:label>
     </owl:Class>
     
@@ -4379,6 +4433,8 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000140"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000025"/>
+        <obo:IAO_0000115 xml:lang="en">A Canadian postal address that enables an agent to locate a facility.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">canadian facility address</rdfs:label>
     </owl:Class>
     
@@ -4962,6 +5018,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A postal code information that is about some geographical region in Canada.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">canadian postal code</rdfs:label>
     </owl:Class>
     
@@ -4972,6 +5029,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">canadian forward sorting area code</rdfs:label>
     </owl:Class>
     
@@ -4988,6 +5046,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a city as part of a postal address.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">postal address city</rdfs:label>
     </owl:Class>
     
@@ -5004,6 +5063,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a country is part of a postal address.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">postal address country</rdfs:label>
     </owl:Class>
     
@@ -5014,6 +5074,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a Canadian province or a Canadian territory.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">canadian first-order administrative region identifier</rdfs:label>
     </owl:Class>
     
@@ -5030,6 +5091,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories).</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">canadian census subdivision identifier</rdfs:label>
     </owl:Class>
     
@@ -5078,6 +5140,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A postal address that can be used to help the delivery of something in Canada.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">canadian postal address</rdfs:label>
     </owl:Class>
     
@@ -5204,6 +5267,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000010"/>
         <obo:IAO_0000115 xml:lang="en">A process temporal specification that is about the birth date of an homo sapiens.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">human birth date</rdfs:label>
     </owl:Class>
     
@@ -5214,6 +5278,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000010"/>
         <obo:IAO_0000115 xml:lang="en">A process temporal specification that is about the date of death of an homo sapiens.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">human death date</rdfs:label>
     </owl:Class>
     
@@ -5230,6 +5295,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that denotes the biological sex of a human.</obo:IAO_0000115>
+        <HDRN:HDRNv1 rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">human biological sex information content entity</rdfs:label>
     </owl:Class>
     
@@ -5497,6 +5563,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is usually part of a pharmacist information system and includes patient identification as well as drug dispensing record item.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">drug dispensing record</rdfs:label>
     </owl:Class>
     
@@ -5507,6 +5574,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that characterizes a class of drug product.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">drug product characterization</rdfs:label>
     </owl:Class>
     
@@ -5517,6 +5585,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000010"/>
         <obo:IAO_0000115 xml:lang="en">A process temporal characterization that is about a drug dispensing procedure.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">drug dispensing record item dispensing date</rdfs:label>
     </owl:Class>
     
@@ -5547,6 +5616,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">The total amount charged by a healthcare organization to payers to cover a drug dispensing procedure and related drug products.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">drug dispensing total charge</rdfs:label>
     </owl:Class>
     
@@ -5557,6 +5627,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">The total amount actually paid from all payers to cover a drug dispensing procedure and related drug products.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">drug dispensing total payment</rdfs:label>
     </owl:Class>
     
@@ -5568,6 +5639,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">The amount paid by the payer to a pharmacy for the drug.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">This excludes the amount paid for dispensing the drug product.</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">drug dispensing drug product charge</rdfs:label>
     </owl:Class>
     
@@ -5579,6 +5651,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">The amount paid by the Payer to a pharmacy for dispensing a drug.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">This excludes the amount paid for the drug product.</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <rdfs:label xml:lang="en">drug dispensing healthcare provider charge</rdfs:label>
     </owl:Class>
     

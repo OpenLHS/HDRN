@@ -18,7 +18,10 @@ import_group:
       mirror_from: "https://raw.githubusercontent.com/OpenLHS/HOSO/main/HOSO-full.owl"
     - id: PDRO
       module_type: mirror
-      mirror_from: "https://raw.githubusercontent.com/OpenLHS/PDROV2/main/PDRO-full.owl"
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/PDROV3/main/PDRO-base.owl"
+subset_group:
+  products:
+    - id: HDRNv1
 robot_report:
   custom_sparql_exports:
     - base-classes-report

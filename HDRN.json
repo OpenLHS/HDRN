@@ -22,9 +22,9 @@
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-05"
+        "val" : "2023-05-10"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-05-05/HDRN.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-05-10/HDRN.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -1851,7 +1851,8 @@
       "meta" : {
         "definition" : {
           "val" : "A health provider identifier that is used to denote a person authorised to act as a physician."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000011",
@@ -1981,7 +1982,8 @@
       "meta" : {
         "definition" : {
           "val" : "A healthcare organisation service delivery that aims at providing a desired effect on the health status of a specified organism. It is usually composed of health procedures and possibly associated ancillary processes."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000013",
@@ -2035,7 +2037,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a public provincial health insurance record."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000022",
@@ -2044,7 +2047,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a building administered by a healthcare organization for the purpose of providing healthcare to a patient or patient population."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000023",
@@ -2053,7 +2057,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a healthcare organization."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000026",
@@ -2062,7 +2067,8 @@
       "meta" : {
         "definition" : {
           "val" : "A healthcare organisation clinical visit where the patient physically attends to a healthcare facility, but where there is no expectation of providing support for activities of daily living (such as eating and bathing) nor accommodation for the patient."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000028",
@@ -2071,7 +2077,8 @@
       "meta" : {
         "definition" : {
           "val" : "A healthcare organisation clinical visit where there is expectation of providing support for activities of daily living (such as eating and bathing) and accommodation for the patient."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000029",
@@ -2080,7 +2087,8 @@
       "meta" : {
         "definition" : {
           "val" : "An inpatient visit that does not extend overnight."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000030",
@@ -2089,7 +2097,8 @@
       "meta" : {
         "definition" : {
           "val" : "A day inpatient visit which includes a surgical procedure."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000031",
@@ -2098,7 +2107,8 @@
       "meta" : {
         "definition" : {
           "val" : "An inpatient visit located in a hospital facility requested by a physician, that may extends overnight."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000032",
@@ -2107,7 +2117,8 @@
       "meta" : {
         "definition" : {
           "val" : "A healthcare organisation clinical visit where there is expectation of providing unplanned, timely, urgent care, including handling life-threatening conditions.\nIt is not necessarily an immediate inpatient subsequent visit."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000033",
@@ -2116,7 +2127,8 @@
       "meta" : {
         "definition" : {
           "val" : "An emergency department visit and an inpatient visit, where there is usually limited accommodation and where the goal is to stabilise a life-threatening condition or decide whether the clinical situation requires a hospitalisation visit."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000034",
@@ -2126,6 +2138,7 @@
         "definition" : {
           "val" : "An emergency department visit and an outpatient visit."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "there is no expectation of providing support for activities of daily living (such as eating and bathing) nor accommodation for the patient"
@@ -2138,7 +2151,8 @@
       "meta" : {
         "definition" : {
           "val" : "an outpatient visit where there is expectation of providing unplanned, timely care, but excluding handling life-threatening conditions"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000036",
@@ -2147,7 +2161,8 @@
       "meta" : {
         "definition" : {
           "val" : "an outpatient visit which includes a surgical procedure"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000037",
@@ -2156,7 +2171,8 @@
       "meta" : {
         "definition" : {
           "val" : "an outpatient visit which includes a diagnostic procedure"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000038",
@@ -2165,7 +2181,8 @@
       "meta" : {
         "definition" : {
           "val" : "An immediate subsequent visit healthcare organisation visit for a given patient that was participating in another healthcare organisation visit for the same organisation just prior to this visit."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000039",
@@ -2174,7 +2191,8 @@
       "meta" : {
         "definition" : {
           "val" : "An information content entity describing the type of visit that occured prior to an immediate inpatient subsequent visit."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000040",
@@ -2183,7 +2201,8 @@
       "meta" : {
         "definition" : {
           "val" : "A healthcare organisation visit where the main entity of interest is a still born."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000041",
@@ -2193,6 +2212,7 @@
         "definition" : {
           "val" : "A healthcare organization clinical visit during which a birth statement was produced regarding the birth of the main patient visit beneficiary."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "In the case of human health the specified organism refers to the child born during the visit."
@@ -2206,6 +2226,7 @@
         "definition" : {
           "val" : "an inpatient visit that is not immedately following another healthcare organisation clinical visit in the same organisation, and is not a healthcare birth visit"
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Patient hospitalized directly from home."
@@ -2221,7 +2242,8 @@
       "meta" : {
         "definition" : {
           "val" : "An emergency department visit for a given patient that was participating in another healthcare organisation visit involving paramedics just prior to this visit."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000044",
@@ -2230,7 +2252,8 @@
       "meta" : {
         "definition" : {
           "val" : "A healthcare organization service delivery where the main entity of interest is a human cadaver that was not delivered just prior to this service."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000045",
@@ -2240,6 +2263,7 @@
         "definition" : {
           "val" : "A healthcare organization clinical visit during which a death statement was produced regarding the death of the main patient visit beneficiary."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "A healthcare organization clinical visit during which the patient died."
@@ -2288,7 +2312,8 @@
       "meta" : {
         "definition" : {
           "val" : "A healthcare organization clinical visit ended at the initiative of the patient without physician approval."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000051",
@@ -2297,7 +2322,8 @@
       "meta" : {
         "definition" : {
           "val" : "A visit ended by the patient without notifying the healthcare organization."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000052",
@@ -2306,7 +2332,8 @@
       "meta" : {
         "definition" : {
           "val" : "An emergency department visit with a triage encounter but no further encounter."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000053",
@@ -2315,7 +2342,8 @@
       "meta" : {
         "definition" : {
           "val" : "An emergency department visit and a visit ended by the patient and some treatment healthcare procedure was provided."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000054",
@@ -2325,6 +2353,7 @@
         "definition" : {
           "val" : "An identifier that denotes a diagnosis related group."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "DRG code"
@@ -2337,7 +2366,8 @@
       "meta" : {
         "definition" : {
           "val" : "A temporal characterisation that is about the start of a healthcare organisation clinical visit"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000056",
@@ -2346,14 +2376,16 @@
       "meta" : {
         "definition" : {
           "val" : "A temporal characterisation that is about the finish of a healthcare organisation clinical visit"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000060",
       "lbl" : "public provincial health insurance record",
       "type" : "CLASS",
       "meta" : {
-        "comments" : [ "An information content entity that contains the information required to manage the insurance coverage of an insured individual." ]
+        "comments" : [ "An information content entity that contains the information required to manage the insurance coverage of an insured individual." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000061",
@@ -2392,6 +2424,7 @@
       "lbl" : "immediate subsequent visit",
       "type" : "CLASS",
       "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "A healthcare organisation clinical visit for a given patient that was participating in another healthcare organisation clinical visit just prior to this visit."
@@ -2404,7 +2437,8 @@
       "meta" : {
         "definition" : {
           "val" : "An immediate subsequent visit where both visits are under the responsability of the same healthcare organisation."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000125",
@@ -2426,12 +2460,19 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a healthcare provider."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000139",
       "lbl" : "facility-supported clinical visit",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare organization clinical visit whom some parts occurs in a healthcare facility."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000140",
       "lbl" : "facility address",
@@ -2444,7 +2485,13 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000142",
       "lbl" : "canadian facility address",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A Canadian postal address that enables an agent to locate a facility."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000145",
       "lbl" : "diagnosis related group",
@@ -3585,7 +3632,8 @@
       "meta" : {
         "definition" : {
           "val" : "A postal code information that is about some geographical region in Canada."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000019",
@@ -3594,7 +3642,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000020",
@@ -3603,7 +3652,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a city as part of a postal address."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000021",
@@ -3612,7 +3662,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a country is part of a postal address."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000022",
@@ -3621,7 +3672,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a Canadian province or a Canadian territory."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000023",
@@ -3630,7 +3682,8 @@
       "meta" : {
         "definition" : {
           "val" : "An identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000024",
@@ -3648,7 +3701,8 @@
       "meta" : {
         "definition" : {
           "val" : "A postal address that can be used to help the delivery of something in Canada."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000030",
@@ -3742,7 +3796,8 @@
       "meta" : {
         "definition" : {
           "val" : "A process temporal specification that is about the birth date of an homo sapiens."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000071",
@@ -3751,7 +3806,8 @@
       "meta" : {
         "definition" : {
           "val" : "A process temporal specification that is about the date of death of an homo sapiens."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000072",
@@ -3760,7 +3816,11 @@
       "meta" : {
         "definition" : {
           "val" : "An information content entity that denotes the biological sex of a human."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1",
+          "val" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000073",
@@ -4149,7 +4209,8 @@
       "meta" : {
         "definition" : {
           "val" : "An information content entity that is usually part of a pharmacist information system and includes patient identification as well as drug dispensing record item."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000109",
@@ -4158,7 +4219,8 @@
       "meta" : {
         "definition" : {
           "val" : "An information content entity that characterizes a class of drug product."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000110",
@@ -4167,7 +4229,8 @@
       "meta" : {
         "definition" : {
           "val" : "A process temporal characterization that is about a drug dispensing procedure."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000111",
@@ -4194,7 +4257,8 @@
       "meta" : {
         "definition" : {
           "val" : "The total amount charged by a healthcare organization to payers to cover a drug dispensing procedure and related drug products."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000115",
@@ -4203,7 +4267,8 @@
       "meta" : {
         "definition" : {
           "val" : "The total amount actually paid from all payers to cover a drug dispensing procedure and related drug products."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000116",
@@ -4213,6 +4278,7 @@
         "definition" : {
           "val" : "The amount paid by the payer to a pharmacy for the drug."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "This excludes the amount paid for dispensing the drug product."
@@ -4226,6 +4292,7 @@
         "definition" : {
           "val" : "The amount paid by the Payer to a pharmacy for dispensing a drug."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "This excludes the amount paid for the drug product."
@@ -5052,6 +5119,13 @@
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "val" : "https://github.com/oborel/obo-relations/issues/164"
         } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1",
+      "lbl" : "HDRNv1",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "First version of set of information items for Health data Research Network Canada" ]
       }
     }, {
       "id" : "http://purl.org/dc/elements/1.1/creator",

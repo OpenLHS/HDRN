@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HDRN/imports/HOSO_import.owl>
-<http://purl.obolibrary.org/obo/HDRN/releases/2023-05-05/imports/HOSO_import.owl>
+<http://purl.obolibrary.org/obo/HDRN/releases/2023-05-10/imports/HOSO_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/HOSO/releases/2023-05-05/HOSO-full.owl>)
-Annotation(owl:versionInfo "2023-05-05")
+Annotation(owl:versionInfo "2023-05-10")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))

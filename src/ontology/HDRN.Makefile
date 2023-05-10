@@ -16,6 +16,9 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 SPARQL_CSTM_EXPORTS_ARGS = $(foreach V,$(SPARQL_EXPORTS),-s $(SPARQLDIR)/$(V).sparql $(REPORTDIR)/$(V).csv)
 
+SPARQL_SBST_EXPORTS_ARGS = $(foreach V,$(SPARQL_EXPORTS),-s $(SPARQLDIR)/$(V).sparql $(REPORTDIR)/$(V)-subset.csv)
+
+#SPARQL_SBST_EXPORTS_ARGS = $($(SPARQLDIR)/base-classes-report.sparql $(REPORTDIR)/HDRNv1-subset.csv)
 
 .PHONY: custom_reports
 custom_reports: $(EDIT_PREPROCESSED) | $(REPORTDIR)
@@ -29,3 +32,12 @@ build_docs:
 	mkdocs build --config-file ../../mkdocs.yaml
 
 
+# Command for sparql report on subset
+
+
+
+.PHONY: subset_reports
+subset_reports: $(EDIT_PREPROCESSED) | $(REPORTDIR)
+ifneq ($(SPARQL_EXPORTS_ARGS),)
+	$(ROBOT) query --use-graphs true -i $(SUBSETDIR)/HDRNv1.owl $(SPARQL_SBST_EXPORTS_ARGS)
+endif
