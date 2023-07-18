@@ -7,16 +7,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HDRN/imports/PDRO_import.owl>
-<http://purl.obolibrary.org/obo/HDRN/releases/2023-05-10/imports/PDRO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/PDRO/releases/2023-05-05/PDRO-base.owl>)
-Annotation(owl:versionInfo "2023-05-10")
+<http://purl.obolibrary.org/obo/HDRN/releases/2023-07-18/imports/PDRO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/PDRO/releases/2023-07-18/PDRO-base.owl>)
+Annotation(owl:versionInfo "2023-07-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000010>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000042>))
@@ -80,7 +80,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000042> "drug dispensing record"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000042> <http://purl.obolibrary.org/obo/IAO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PDRO_0000041>))
-SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000042> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/NOYO_0000024>))
+SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000042> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/IOIO_0000014>))
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000109> (drug product characterization)
 
@@ -92,7 +92,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000109> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000110> "A process temporal characterization that is about a drug dispensing procedure."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000110> "drug dispensing record item dispensing date"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000110> <http://purl.obolibrary.org/obo/NOYO_0000010>)
+SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000110> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>)
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000111> (dispensed drug quantity)
 

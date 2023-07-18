@@ -25,9 +25,9 @@
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-10"
+        "val" : "2023-07-18"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-05-10/HDRN-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-07-18/HDRN-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000010",
