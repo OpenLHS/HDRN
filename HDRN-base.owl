@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/HDRN/HDRN-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/HDRN/HDRN-base.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,18 +9,18 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:HDRN="http://purl.obolibrary.org/obo/HDRN#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HDRN/HDRN-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-05-10/HDRN-base.owl"/>
-        <dc:contributor>Jean-François Ethier</dc:contributor>
-        <dc:contributor>Mark McGilchrist</dc:contributor>
-        <dc:contributor>Paul Fabry</dc:contributor>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description xml:lang="en">HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada.</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title>Health Data Research Network Ontology</terms:title>
-        <owl:versionInfo>2023-05-10</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-07-18/HDRN-base.owl"/>
+        <dce:contributor>Jean-François Ethier</dce:contributor>
+        <dce:contributor>Mark McGilchrist</dce:contributor>
+        <dce:contributor>Paul Fabry</dce:contributor>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description xml:lang="en">HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada.</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title>Health Data Research Network Ontology</dcterms:title>
+        <owl:versionInfo>2023-07-18</owl:versionInfo>
     </owl:Ontology>
     
 

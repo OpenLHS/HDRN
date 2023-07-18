@@ -1,34 +1,41 @@
 ?x	?label
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid103	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid106	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid111	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid115	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid119	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid122	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid128	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid132	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid135	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid141	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid148	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid153	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid158	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid163	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid168	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid174	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid179	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid188	
-_:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid89	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid104	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid118	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid121	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid126	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid130	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid134	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid137	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid143	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid147	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid150	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid156	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid163	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid168	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid173	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid178	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid183	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid189	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid196	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid204	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid217	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid222	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid231	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid254	
+_:B222e9159X2D53beX2D41f7X2Da0adX2D89343f1c291cgenid93	
 <http://purl.obolibrary.org/obo/BFO_0000001>	"entity"
 <http://purl.obolibrary.org/obo/BFO_0000002>	"continuant"
 <http://purl.obolibrary.org/obo/BFO_0000003>	"occurrent"
 <http://purl.obolibrary.org/obo/BFO_0000004>	"independent continuant"
+<http://purl.obolibrary.org/obo/BFO_0000008>	"temporal region"
 <http://purl.obolibrary.org/obo/BFO_0000015>	"process"
+<http://purl.obolibrary.org/obo/BFO_0000016>	"disposition"
 <http://purl.obolibrary.org/obo/BFO_0000017>	"realizable entity"
 <http://purl.obolibrary.org/obo/BFO_0000020>	"specifically dependent continuant"
 <http://purl.obolibrary.org/obo/BFO_0000023>	"role"
 <http://purl.obolibrary.org/obo/BFO_0000031>	"generically dependent continuant"
+<http://purl.obolibrary.org/obo/BFO_0000034>	"function"
 <http://purl.obolibrary.org/obo/BFO_0000040>	"material entity"
-<http://purl.obolibrary.org/obo/HEPRO_0000001>	"health procedure request"
 <http://purl.obolibrary.org/obo/HEPRO_0000004>	"health procedure"
 <http://purl.obolibrary.org/obo/HEPRO_0000005>	"health activity"
 <http://purl.obolibrary.org/obo/HEPRO_0000009>	"health provider identifier"
@@ -37,6 +44,7 @@ _:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid89
 <http://purl.obolibrary.org/obo/HEPRO_0000012>	"health provider"
 <http://purl.obolibrary.org/obo/HEPRO_0000013>	"diagnostic health procedure"
 <http://purl.obolibrary.org/obo/HEPRO_0000014>	"surgical health procedure"
+<http://purl.obolibrary.org/obo/HEPRO_0000030>	"health procedure specification"
 <http://purl.obolibrary.org/obo/HOSO_0000003>	"healthcare service organism specification"
 <http://purl.obolibrary.org/obo/HOSO_0000004>	"healthcare facility"
 <http://purl.obolibrary.org/obo/HOSO_0000006>	"healthcare organization role"
@@ -85,40 +93,44 @@ _:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid89
 <http://purl.obolibrary.org/obo/HOSO_0000139>	"facility-supported clinical visit"
 <http://purl.obolibrary.org/obo/HOSO_0000140>	"facility address"
 <http://purl.obolibrary.org/obo/HOSO_0000142>	"canadian facility address"
+<http://purl.obolibrary.org/obo/IAO_0000005>	"objective specification"
+<http://purl.obolibrary.org/obo/IAO_0000007>	"action specification"
 <http://purl.obolibrary.org/obo/IAO_0000027>	"data item"
 <http://purl.obolibrary.org/obo/IAO_0000030>	"information content entity"
 <http://purl.obolibrary.org/obo/IAO_0000033>	"directive information entity"
+<http://purl.obolibrary.org/obo/IAO_0000104>	"plan specification"
 <http://purl.obolibrary.org/obo/IAO_0000300>	"textual entity"
 <http://purl.obolibrary.org/obo/IAO_0000422>	"postal address"
 <http://purl.obolibrary.org/obo/IAO_0000646>	"postal code"
 <http://purl.obolibrary.org/obo/IAO_0020000>	"identifier"
 <http://purl.obolibrary.org/obo/IAO_0020010>	"identifier creating process"
+<http://purl.obolibrary.org/obo/IOIO_0000001>	"human birth statement"
+<http://purl.obolibrary.org/obo/IOIO_0000003>	"human death statement"
+<http://purl.obolibrary.org/obo/IOIO_0000005>	"human birth temporal information"
+<http://purl.obolibrary.org/obo/IOIO_0000006>	"human death temporal information"
+<http://purl.obolibrary.org/obo/IOIO_0000013>	"organism identifier"
+<http://purl.obolibrary.org/obo/IOIO_0000014>	"human identifier"
 <http://purl.obolibrary.org/obo/NCBITaxon_2759>	"Eukaryota"
 <http://purl.obolibrary.org/obo/NCBITaxon_9606>	"Homo sapiens"
-<http://purl.obolibrary.org/obo/NOYO_0000001>	"request"
-<http://purl.obolibrary.org/obo/NOYO_0000003>	"service agreement specification"
-<http://purl.obolibrary.org/obo/NOYO_0000006>	"service delivery"
-<http://purl.obolibrary.org/obo/NOYO_0000009>	"temporal characterization"
-<http://purl.obolibrary.org/obo/NOYO_0000010>	"process temporal characterization"
-<http://purl.obolibrary.org/obo/NOYO_0000012>	"informational entity"
-<http://purl.obolibrary.org/obo/NOYO_0000013>	"statement"
-<http://purl.obolibrary.org/obo/NOYO_0000018>	"canadian postal code"
-<http://purl.obolibrary.org/obo/NOYO_0000019>	"canadian forward sorting area code"
-<http://purl.obolibrary.org/obo/NOYO_0000020>	"postal address city"
-<http://purl.obolibrary.org/obo/NOYO_0000021>	"postal address country"
-<http://purl.obolibrary.org/obo/NOYO_0000022>	"canadian first-order administrative region identifier"
-<http://purl.obolibrary.org/obo/NOYO_0000023>	"canadian census subdivision identifier"
-<http://purl.obolibrary.org/obo/NOYO_0000024>	"human identifier"
-<http://purl.obolibrary.org/obo/NOYO_0000025>	"canadian postal address"
-<http://purl.obolibrary.org/obo/NOYO_0000050>	"birth statement"
-<http://purl.obolibrary.org/obo/NOYO_0000051>	"death statement"
-<http://purl.obolibrary.org/obo/NOYO_0000070>	"human birth date"
-<http://purl.obolibrary.org/obo/NOYO_0000071>	"human death date"
 <http://purl.obolibrary.org/obo/OBI_0000011>	"planned process"
 <http://purl.obolibrary.org/obo/OBI_0000245>	"organization"
 <http://purl.obolibrary.org/obo/OBI_0100026>	"organism"
 <http://purl.obolibrary.org/obo/OMRSE_00000061>	"architectural structure"
 <http://purl.obolibrary.org/obo/OMRSE_00000062>	"facility"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000020>	"canadian postal address"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000022>	"canadian first-order administrative region identifier"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000023>	"canadian forward sorting area code"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000024>	"postal address city"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000025>	"postal address country"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000026>	"canadian postal code"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000027>	"request"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000028>	"service agreement specification"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000029>	"service offer"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000030>	"temporally qualifying statement"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>	"process temporally qualifying statement"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000035>	"service agreement negotiation"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000036>	"service delivery"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000065>	"temporal information"
 <http://purl.obolibrary.org/obo/PDRO_0000041>	"drug dispensing record item"
 <http://purl.obolibrary.org/obo/PDRO_0000042>	"drug dispensing record"
 <http://purl.obolibrary.org/obo/PDRO_0000109>	"drug product characterization"
@@ -127,3 +139,4 @@ _:Bcf110c20X2D6ab4X2D41ddX2D9345X2Da5e1125fc676genid89
 <http://purl.obolibrary.org/obo/PDRO_0000115>	"drug dispensing total payment"
 <http://purl.obolibrary.org/obo/PDRO_0000116>	"drug dispensing drug product charge"
 <http://purl.obolibrary.org/obo/PDRO_0000117>	"drug dispensing healthcare provider charge"
+<http://purl.obolibrary.org/obo/SEPIO_0000174>	"statement"
