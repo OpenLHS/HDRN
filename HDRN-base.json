@@ -25,9 +25,9 @@
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-07-18"
+        "val" : "2023-07-27"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-07-18/HDRN-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-07-27/HDRN-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000010",
@@ -150,6 +150,26 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000046",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000047",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000048",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000049",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000050",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
@@ -175,16 +195,6 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/HOSO_0000055",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/HOSO_0000056",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000060",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
@@ -196,6 +206,36 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000069",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000102",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000103",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000120",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000121",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000122",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000123",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
@@ -218,6 +258,21 @@
         "definition" : {
           "val" : "A Canadian postal address that enables an agent to locate a facility."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000145",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000010",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000011",
+      "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
@@ -272,6 +327,16 @@
           "pred" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1",
           "val" : "http://purl.obolibrary.org/obo/HDRN#HDRNv1"
         } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000021",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PDRO_0000041",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000042",

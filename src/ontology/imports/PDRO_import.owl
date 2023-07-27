@@ -7,16 +7,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HDRN/imports/PDRO_import.owl>
-<http://purl.obolibrary.org/obo/HDRN/releases/2023-07-18/imports/PDRO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/PDRO/releases/2023-07-18/PDRO-base.owl>)
-Annotation(owl:versionInfo "2023-07-18")
+<http://purl.obolibrary.org/obo/HDRN/releases/2023-07-27/imports/PDRO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/PDRO/releases/2023-07-27/PDRO-base.owl>)
+Annotation(owl:versionInfo "2023-07-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000014>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000042>))
@@ -29,9 +29,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000116>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PDRO_0000117>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000070>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002180>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
@@ -70,7 +70,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000040> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000041> (drug dispensing record item)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000041> "A data item that is part of a drug-dispensing record and describes how much of some drug products have been dispensed to a patient."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000041> "A data item that is part of a drug-dispensing record and describes the dispensing process, including how much of some drug products have been dispensed to a patient."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000041> "drug dispensing record item"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000041> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
@@ -90,15 +90,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000109> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000110> (drug dispensing record item dispensing date)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000110> "A process temporal characterization that is about a drug dispensing procedure."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000110> "A temporal information that is a component of a drug dispensing record item that indicates that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the drug dispensing process described by the drug dispensing record item."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000110> "drug dispensing record item dispensing date"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000110> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>)
+SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000110> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000065>)
+SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000070> <http://purl.obolibrary.org/obo/PDRO_0000041>))
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000111> (dispensed drug quantity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000111> "A data item that is about the total quantity of a drug product that was distributed during a drug dispensing procedure."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000111> "dispensed drug quantity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000111> <http://purl.obolibrary.org/obo/IAO_0000027>)
+SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000070> <http://purl.obolibrary.org/obo/PDRO_0000041>))
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000112> (drug dispensing covered duration specification)
 
@@ -108,27 +110,27 @@ SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000112> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000114> (drug dispensing total charge)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000114> "The total amount charged by a healthcare organization to payers to cover a drug dispensing procedure and related drug products."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000114> "An information content entity that describes the total amount charged by a healthcare organization to payers to cover a drug dispensing procedure and related drug products."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000114> "drug dispensing total charge"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000114> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000115> (drug dispensing total payment)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000115> "The total amount actually paid from all payers to cover a drug dispensing procedure and related drug products."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000115> "An information content entity that describes the total amount actually paid from all payers to cover a drug dispensing procedure and related drug products."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000115> "drug dispensing total payment"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000116> (drug dispensing drug product charge)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000116> "The amount paid by the payer to a pharmacy for the drug."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/PDRO_0000116> "This excludes the amount paid for dispensing the drug product."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000116> "An information content entity that describes the amount paid by the payer to a pharmacy for the drug."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PDRO_0000116> "This excludes the amount paid for dispensing the drug product."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000116> "drug dispensing drug product charge"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000116> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/PDRO_0000117> (drug dispensing healthcare provider charge)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000117> "The amount paid by the Payer to a pharmacy for dispensing a drug."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/PDRO_0000117> "This excludes the amount paid for the drug product."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PDRO_0000117> "An information content entity that describes the amount paid by the Payer to a pharmacy for dispensing a drug."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PDRO_0000117> "This excludes the amount paid for the drug product."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PDRO_0000117> "drug dispensing healthcare provider charge"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PDRO_0000117> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
