@@ -1440,7 +1440,9 @@
       "lbl" : "public provincial health insurance record",
       "type" : "CLASS",
       "meta" : {
-        "comments" : [ "An information content entity that contains the information required to manage the insurance coverage of an insured individual." ],
+        "definition" : {
+          "val" : "An information content entity that contains the information required to manage the insurance coverage of an insured individual."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
@@ -1466,11 +1468,10 @@
       "lbl" : "immediate subsequent visit",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
-          "val" : "A healthcare organisation clinical visit for a given patient that was participating in another healthcare organisation clinical visit just prior to this visit."
-        } ]
+        "definition" : {
+          "val" : "A healthcare organization clinical visit for a given patient that was participating in another healthcare organisation clinical visit just prior to this visit."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000069",

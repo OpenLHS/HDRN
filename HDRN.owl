@@ -4549,9 +4549,9 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000062"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that contains the information required to manage the insurance coverage of an insured individual.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HOSO#HOSO-H"/>
-        <rdfs:comment xml:lang="en">An information content entity that contains the information required to manage the insurance coverage of an insured individual.</rdfs:comment>
         <rdfs:label xml:lang="en">public provincial health insurance record</rdfs:label>
     </owl:Class>
     
@@ -4653,7 +4653,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000600 xml:lang="en">A healthcare organisation clinical visit for a given patient that was participating in another healthcare organisation clinical visit just prior to this visit.</obo:IAO_0000600>
+        <obo:IAO_0000115 xml:lang="en">A healthcare organization clinical visit for a given patient that was participating in another healthcare organisation clinical visit just prior to this visit.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HOSO#HOSO-H"/>
         <rdfs:label xml:lang="en">immediate subsequent visit</rdfs:label>
