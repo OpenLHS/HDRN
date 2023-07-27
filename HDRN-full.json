@@ -1898,6 +1898,7 @@
           "val" : "An information content entity that is about a sub-group of health procedures."
         },
         "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "'curative procedures'\n'Surgeries performed on June, 19th 2023 at Velpeau Hospital'"
@@ -1925,7 +1926,8 @@
         "definition" : {
           "val" : "An information content entity that is about a sub-group of pathological conditions."
         },
-        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ]
+        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
@@ -2051,6 +2053,7 @@
         "definition" : {
           "val" : "A temporal information that is a component of a health procedure beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health procedure."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a health procedure beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health procedure."
@@ -2077,6 +2080,7 @@
         "definition" : {
           "val" : "A temporal information that is a component of a health procedure ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health procedure."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a health procedure ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health procedure."
@@ -2129,6 +2133,7 @@
         "definition" : {
           "val" : "A temporal information that is a component of a pathological condition start temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified start of the pathological condition."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a pathological condition start temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified start of the pathological condition."
@@ -2142,6 +2147,7 @@
         "definition" : {
           "val" : "A temporal information that is a component of a pathological condition end temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified end of the pathological condition."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a pathological condition end temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified end of the pathological condition."
@@ -2839,6 +2845,7 @@
         "definition" : {
           "val" : "An information content entity that describes the type of impact of a pathological condition on a clinical visit."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An information content entity that describes the type of impact of a pathological condition on a clinical visit."
@@ -3815,6 +3822,7 @@
         "definition" : {
           "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
@@ -3828,6 +3836,7 @@
         "definition" : {
           "val" : "A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human."
@@ -4842,6 +4851,7 @@
         "definition" : {
           "val" : "An identifier that denotes a Canadian province or a Canadian territory."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An identifier that denotes a Canadian province or a Canadian territory."
@@ -4855,6 +4865,7 @@
         "definition" : {
           "val" : "An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code."
