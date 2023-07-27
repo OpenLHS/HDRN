@@ -22,9 +22,9 @@
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-07-18"
+        "val" : "2023-07-27"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-07-18/HDRN-full.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-07-27/HDRN-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -1738,6 +1738,9 @@
       "lbl" : "health procedure request",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A request requesting the execution of some health procedure."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
@@ -1762,13 +1765,16 @@
       "lbl" : "health procedure",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "- A planned process that is maximally directed by a health procedure specification.\n- A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "A planned process that has some components that are planned processes, including at least one that is a health activity."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
-          "val" : "- A planned process that is maximally directed by a health procedure specification.\n\n - A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury."
+          "val" : "- A planned process that is maximally directed by a health procedure specification.\n- A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury."
         } ]
       }
     }, {
@@ -1776,6 +1782,9 @@
       "lbl" : "health activity",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A planned process that aims to produce a truthful statement about the health status of an organism or modify it."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
@@ -1807,6 +1816,9 @@
       "lbl" : "health activity outcome information",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is a specified output of a health activity."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
@@ -1882,13 +1894,13 @@
       "lbl" : "health procedure sub-group name",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is about a sub-group of health procedures."
+        },
         "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "'curative procedures'\n'Surgeries performed on June, 19th 2023 at Velpeau Hospital'"
-        }, {
-          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
-          "val" : "An information content entity that is about a sub-group of health procedures."
         } ]
       }
     }, {
@@ -1896,13 +1908,13 @@
       "lbl" : "health activity sub-group name",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is about a sub-group of health activities."
+        },
         "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "'laboratory test'"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "An information content entity that is about a sub-group of health activities."
         } ]
       }
     }, {
@@ -1910,17 +1922,19 @@
       "lbl" : "pathological condition sub-group name",
       "type" : "CLASS",
       "meta" : {
-        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+        "definition" : {
           "val" : "An information content entity that is about a sub-group of pathological conditions."
-        } ]
+        },
+        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
       "lbl" : "health procedure beginning statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A process beginning statement that temporally qualifies the beginning of a health procedure."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A process beginning statement that temporally qualifies the beginning of a health procedure."
@@ -1931,16 +1945,18 @@
       "lbl" : "health procedure ending statement",
       "type" : "CLASS",
       "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+        "definition" : {
           "val" : "A process ending statement that temporally qualifies the end of a health procedure."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
       "lbl" : "health activity beginning statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A process beginning statement that temporally qualifies the beginning of a health activity."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A process beginning statement that temporally qualifies the beginning of a health activity."
@@ -1951,6 +1967,9 @@
       "lbl" : "health activity ending statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A process ending statement that temporally qualifies the end of a health activity."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A process ending statement that temporally qualifies the end of a health activity."
@@ -1961,6 +1980,9 @@
       "lbl" : "health procedure agreement specification",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A service agreement specification that aims to direct some health procedure."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "A service agreement specification that has as part a health procedure specification."
@@ -1974,9 +1996,155 @@
       "lbl" : "health procedure specification",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A directive information entity that aims to direct a health procedure."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A directive information entity that aims to direct a health procedure."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000100",
+      "lbl" : "health activity identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a health activity."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "An identifier that denotes a health activity."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000101",
+      "lbl" : "health procedure identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a health procedure."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "An identifier that denotes a health procedure."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000102",
+      "lbl" : "health activity beginning temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a health activity beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health activity."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a health activity beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health activity."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000103",
+      "lbl" : "health procedure beginning temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a health procedure beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health procedure."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a health procedure beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health procedure."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000104",
+      "lbl" : "health activity ending temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a health activity ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health activity."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a health activity ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health activity."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000105",
+      "lbl" : "health procedure ending temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a health procedure ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health procedure."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a health procedure ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health procedure."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000125",
+      "lbl" : "pathological condition presence statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A pragmatically accepted statement that states the presence of a pathological condition for an organism."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
+          "val" : "A pragmatically accepted statement that states the presence of a pathological condition for an organism."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000127",
+      "lbl" : "pathological condition start temporally qualifying statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporally qualifying statement that qualifies the clinically identified appearance of a disorder or a disease, or the beginning of a pathological process."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporally qualifying statement that qualifies the clinically identified appearance of a disorder or a disease, or the beginning of a pathological process."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000128",
+      "lbl" : "pathological condition end temporally qualifying statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporally qualifying statement that qualifies the clinically identified disappearance of a disorder or a disease, or the ending of a pathological process."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporally qualifying statement that qualifies the clinically identified disappearance of a disorder or a disease, or the ending of a pathological process."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000129",
+      "lbl" : "pathological condition start temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a pathological condition start temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified start of the pathological condition."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a pathological condition start temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified start of the pathological condition."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000130",
+      "lbl" : "pathological condition end temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a pathological condition end temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified end of the pathological condition."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a pathological condition end temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified end of the pathological condition."
         } ]
       }
     }, {
@@ -2291,7 +2459,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A healthcare organisation visit where the main entity of interest is a still born."
+          "val" : "A healthcare organisation service delivery where the main entity of interest is a still born."
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
@@ -2368,7 +2536,7 @@
         "definition" : {
           "val" : "A directive information entity that aims at directing what health procedures or healthcare organization services are recommended after this visit."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000047",
@@ -2378,7 +2546,7 @@
         "definition" : {
           "val" : "A visit discharge specification that aims at directing to which healthcare organisation the patient should be transferred after the end of the current visit."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000048",
@@ -2388,7 +2556,7 @@
         "definition" : {
           "val" : "An information content entity that is part of a visit transfer specification and is about the type of healthcare organization specified."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000049",
@@ -2398,7 +2566,7 @@
         "definition" : {
           "val" : "A visit discharge specification for a given clinical visit that has no visit transfer specification."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000050",
@@ -2456,23 +2624,31 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000055",
-      "lbl" : "healthcare organization clinical visit start charaterisation",
+      "lbl" : "healthcare organization service delivery beginning statement",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A temporal characterisation that is about the start of a healthcare organisation clinical visit"
+          "val" : "A process beginning statement that temporally qualifies the beginning of a healthcare organisation service delivery."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A process beginning statement that temporally qualifies the beginning of a healthcare organisation service delivery."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000056",
-      "lbl" : "healthcare organization clinical visit finish charaterisation",
+      "lbl" : "healthcare organization service delivery ending statement",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A temporal characterisation that is about the finish of a healthcare organisation clinical visit"
+          "val" : "A process ending statement that temporally qualifies the ending of a healthcare organisation service delivery."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A process ending statement that temporally qualifies the ending of a healthcare organisation service delivery."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000060",
@@ -2536,6 +2712,116 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000100",
+      "lbl" : "healthcare organization service delivery identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a healthcare organization service delivery."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "An identifier that denotes a healthcare organization service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000102",
+      "lbl" : "healthcare organization service delivery beginning temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a healthcare organization service delivery beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of healthcare organization service delivery."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a healthcare organization service delivery beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of healthcare organization service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000103",
+      "lbl" : "healthcare organization service delivery ending temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a healthcare organization service delivery ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of healthcare organization service delivery."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a healthcare organization service delivery ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of healthcare organization service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000120",
+      "lbl" : "canadian healthcare facility postal code",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A canadian postal code that denotes a geographical region where a canadian healthcare facility is located."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A canadian postal code that denotes a geographical region where a canadian healthcare facility is located."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000121",
+      "lbl" : "canadian healthcare organization postal code",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A canadian postal code that denotes a geographical region where postal payloads are to be delivered for a canadian healthcare organization."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A canadian postal code that denotes a geographical region where postal payloads are to be delivered for a canadian healthcare organization."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000122",
+      "lbl" : "canadian healthcare facility forward sorting area code",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A canadian forward sorting area code that denotes a geographical region where a canadian healthcare facility is located."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A canadian forward sorting area code that denotes a geographical region where a canadian healthcare facility is located."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000123",
+      "lbl" : "canadian healthcare organization forward sorting area code",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A canadian forward sorting area code that denotes a geographical region where postal payloads are to be delivered for a canadian healthcare organization."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A canadian forward sorting area code that denotes a geographical region where postal payloads are to be delivered for a canadian healthcare organization."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "lbl" : "health organization clinical visit pathological condition impact statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A pragmatically accepted statement that states the impact of a pathological condition on a clinical visit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A pragmatically accepted statement that states the impact of a pathological condition on a clinical visit."
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000125",
       "lbl" : "clinical visit ending determination",
       "type" : "CLASS",
@@ -2543,6 +2829,19 @@
         "definition" : {
           "val" : "A healthcare procedure where the responsible healthcare worker comes to the conclusion that a clinical visit can end."
         }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000126",
+      "lbl" : "pathological condition impact type on clinical visit",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that describes the type of impact of a pathological condition on a clinical visit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "An information content entity that describes the type of impact of a pathological condition on a clinical visit."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000137",
@@ -2592,11 +2891,11 @@
       "lbl" : "diagnosis related group",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+        "definition" : {
           "val" : "An information content entity that aims at representing the various forms of care provided within the healthcare organization clinical visit as approximated by a case-mix group definition."
-        }, {
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ],
+        "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "DRG"
         } ]
@@ -3450,13 +3749,16 @@
       "lbl" : "human birth statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Connor, John, born on 28/2/1985\n\nConnor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
-          "val" : "A process temporal characterization about the birth of a human including an identifier and a temporal information of the birth of this human."
+          "val" : "A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human."
         } ]
       }
     }, {
@@ -3464,6 +3766,9 @@
       "lbl" : "civil birth record",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A state sanctioned human birth statement."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
@@ -3475,13 +3780,16 @@
       "lbl" : "human death statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Reese, Kyle died in 1984"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
-          "val" : "A process temporal characterization about the death of a human including an identifier and a temporal information of the death of this human."
+          "val" : "A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human."
         } ]
       }
     }, {
@@ -3489,6 +3797,9 @@
       "lbl" : "civil death record",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A state sanctioned human death statement."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
@@ -3500,6 +3811,9 @@
       "lbl" : "human birth temporal information",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
@@ -3510,6 +3824,9 @@
       "lbl" : "human death temporal information",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human."
@@ -3520,6 +3837,10 @@
       "lbl" : "biological sex information content entity",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity that denotes the biological sex of an organism."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An information content entity that denotes the biological sex of an organism."
@@ -3530,7 +3851,10 @@
       "lbl" : "human biological sex information content entity",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
+        "definition" : {
+          "val" : "A biological sex information content entity that denotes the biological sex of a human."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A biological sex information content entity that denotes the biological sex of a human."
@@ -3541,6 +3865,9 @@
       "lbl" : "human biological sex or gender identity information content entity",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity that denotes a biological sex or a gender identity of a human."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
@@ -3552,6 +3879,9 @@
       "lbl" : "organism identifier",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a particular organism."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "'Goose' (the name of a cat)"
@@ -3565,6 +3895,9 @@
       "lbl" : "human identifier",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An organism identifier that denotes a particular human."
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
@@ -3576,6 +3909,9 @@
       "lbl" : "human birth date",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A human birth temporal information that denotes a time interval of one day as defined in a calendar accepted in a human society."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A human birth temporal information that denotes a time interval of one day as defined in a calendar accepted in a human society."
@@ -3586,6 +3922,9 @@
       "lbl" : "human death date",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A human death temporal information that denotes a time interval of one day as defined in a calendar accepted in a human society."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A human death temporal information that denotes a time interval of one day as defined in a calendar accepted in a human society."
@@ -4354,6 +4693,9 @@
       "lbl" : "is directed by",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "The inverse relations of directs"
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "The inverse relations of directs"
@@ -4364,6 +4706,9 @@
       "lbl" : "is about an aspect of",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "A is about an aspect of B := A is about a specifically dependent continuant that inheres in B."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A is about an aspect of B := A is about a specifically dependent continuant that inheres in B."
@@ -4374,6 +4719,9 @@
       "lbl" : "directs",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "A directs B := A is a directive information entity that guides an agent in the execution of B."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "A directs B := A is a directive information entity that guides an agent in the execution of B."
@@ -4384,6 +4732,9 @@
       "lbl" : "is filled by",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "The inverse relation of fills"
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "The inverse relation of fills"
@@ -4405,6 +4756,9 @@
       "lbl" : "pragmatically accepted statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true."
@@ -4415,6 +4769,9 @@
       "lbl" : "government sanctioned statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A pragmatically accepted statement authored by a governement or a related organization such that if this organization acts upon it, it will treat it as true."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "A date of birth recorded in the French civil registrar."
@@ -4428,6 +4785,9 @@
       "lbl" : "informational slot",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An informational entity that can be filled by an informational filler."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An informational entity that can be filled by an informational filler."
@@ -4438,6 +4798,9 @@
       "lbl" : "informational filler",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An informational entity that fills an informational slot."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An informational entity that fills an informational slot."
@@ -4448,6 +4811,9 @@
       "lbl" : "canadian postal address",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A postal address that can be used to help the delivery of something in Canada."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "A postal address that can be used to help the delivery of something in Canada."
@@ -4458,6 +4824,10 @@
       "lbl" : "canadian census subdivision identifier",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a Canadian municipality (as determined by provincial/territorial legislation) or a Canadian area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An identifier that denotes a Canadian municipality (as determined by provincial/territorial legislation) or a Canadian area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."
@@ -4468,6 +4838,9 @@
       "lbl" : "canadian first-order administrative region identifier",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a Canadian province or a Canadian territory."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An identifier that denotes a Canadian province or a Canadian territory."
@@ -4478,6 +4851,9 @@
       "lbl" : "canadian forward sorting area code",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code."
@@ -4488,6 +4864,9 @@
       "lbl" : "postal address city",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a city and is intended to be used as part of a postal address."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An identifier that denotes a city and is intended to be used as part of a postal address."
@@ -4498,6 +4877,9 @@
       "lbl" : "postal address country",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a country and is intended to be used as part of a postal address."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An identifier that denotes a country and is intended to be used as part of a postal address."
@@ -4508,6 +4890,9 @@
       "lbl" : "canadian postal code",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A postal code that denotes some geographical region in Canada."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A postal code that denotes some geographical region in Canada."
@@ -4518,10 +4903,13 @@
       "lbl" : "request",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity specifiying one or several types of processes that a party, whether a person or an organization, wants to see instantiated for the benefit of itself or another party."
+        },
         "comments" : [ "It is an open question whether the mereological sum of a request with any other ICE is also a request" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
-          "val" : "An information content entity representing the will of a person to have something done and that includes specifications for the latter."
+          "val" : "An information content entity specifiying one or several types of processes that a party, whether a person or an organization, wants to see instantiated for the benefit of itself or another party."
         } ]
       }
     }, {
@@ -4529,6 +4917,9 @@
       "lbl" : "service agreement specification",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "An information content entity that is the output of a service agreement negociation."
@@ -4542,6 +4933,9 @@
       "lbl" : "service offer",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity describing the processes a person or an organization is willing to perform for a third-party."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "An information content entity describing the processes a person or an organization is willing to perform for a third-party."
@@ -4552,6 +4946,9 @@
       "lbl" : "temporally qualifying statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A statement that states that an entity existed, exists or will exist at some point during a specified temporal region."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A statement that states that an entity existed, exists or will exist at some point during a specified temporal region."
@@ -4562,6 +4959,9 @@
       "lbl" : "process temporally qualifying statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some process occurred, occurs or will occur."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some process occurred, occurs or will occur."
@@ -4572,6 +4972,9 @@
       "lbl" : "process beginning statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A process temporally qualifying statement qualifying temporally the beginning of a process."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A process temporally qualifying statement qualifying temporally the beginning of a process."
@@ -4582,6 +4985,9 @@
       "lbl" : "process ending statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A process temporally qualifying statement qualifying temporally the ending of a process."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A process temporally qualifying statement qualifying temporally the ending of a process."
@@ -4592,6 +4998,9 @@
       "lbl" : "service agreement negotiation",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement."
@@ -4602,9 +5011,12 @@
       "lbl" : "service delivery",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "- A planned process that aims at fulfilling the commitments of a service agreement.\n\n- A planned process that is maximally directed by a service agreement specification."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
-          "val" : "A planned process that aims at fulfilling the commitments of a service agreement."
+          "val" : "- A planned process that aims at fulfilling the commitments of a service agreement.\n\n- A planned process that is maximally directed by a service agreement specification."
         } ]
       }
     }, {
@@ -4612,6 +5024,9 @@
       "lbl" : "agent plan to act as if some statement was true",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A plan of an agent to act as if some statement was true."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A plan of an agent to act as if some statement was true."
@@ -4622,6 +5037,9 @@
       "lbl" : "temporal qualification of the appearance of a plan to act as if some statement was true",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A continuant appearance statement that temporally qualifies the apparition of a plan to act as if some statement was true."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A continuant appearance statement that temporally qualifies the apparition of a plan to act as if some statement was true."
@@ -4632,6 +5050,9 @@
       "lbl" : "temporal qualification of the disappearance of a plan to act as if some statement was true",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A continuant disappearance statement that temporally qualifies the disappearance of a plan to act as if some statement was true."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A continuant disappearance statement that temporally qualifies the disappearance of a plan to act as if some statement was true."
@@ -4642,6 +5063,9 @@
       "lbl" : "continuant temporally qualifying statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some continuant exists."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "'May 5th 2023' for characterizing temporally a plan that existed from 8 AM to noon on this day."
@@ -4655,6 +5079,9 @@
       "lbl" : "continuant appearance statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A continuant temporally qualifying statement qualifying temporally the appearance of a continuant."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A continuant temporally qualifying statement qualifying temporally the appearance of a continuant."
@@ -4665,6 +5092,9 @@
       "lbl" : "continuant disappearance statement",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A continuant temporally qualifying statement temporally qualifying the disappearance of a continuant."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A continuant temporally qualifying statement temporally qualifying the disappearance of a continuant."
@@ -4675,6 +5105,9 @@
       "lbl" : "pathological condition",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An entity that is a disorder, a disease or a pathological bodily process"
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An entity that is a disorder, a disease or a pathological bodily process"
@@ -4682,9 +5115,12 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
-      "lbl" : "definitional necessary condition",
+      "lbl" : "definitional necessary conditions",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "Necessary condition that is definitional, that is the notion to be defined does not appear in the condition."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "Necessary condition that is definitional, that is the notion to be defined does not appear in the condition."
@@ -4692,9 +5128,12 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
-      "lbl" : "definitional necessary and sufficient condition",
+      "lbl" : "definitional necessary and sufficient conditions",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition."
@@ -4713,12 +5152,12 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000064",
-      "lbl" : "necessary and sufficient condition",
+      "lbl" : "necessary and sufficient conditions",
       "type" : "PROPERTY",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
-          "val" : "Human-readable necessary and sufficient membership condition of a class or a property."
+          "val" : "Human-readable necessary and sufficient membership conditions of a class or a property."
         } ]
       }
     }, {
@@ -4726,6 +5165,9 @@
       "lbl" : "temporal information",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An information content entity that denotes a one-dimension temporal region."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An information content entity that denotes a one-dimension temporal region."
@@ -4736,6 +5178,9 @@
       "lbl" : "maximally directs",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "A maximally directs B := A directs B, and B is compliant to A."
+        },
         "comments" : [ "Discussed in: Adrien Barton, Laure Vieu, Jean-François Ethier. Directing Actions. Workshop on Foundational Ontology (FOUST III), Joint Ontology Workshops (JOWO 2019), Sep 2019, Graz, Austria." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
@@ -4747,6 +5192,9 @@
       "lbl" : "is maximally directed by",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "The inverse relation of maximally directs."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "The inverse relation of maximally directs."
@@ -4757,6 +5205,9 @@
       "lbl" : "component of",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "The inverse relation of has component."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "The inverse relation of has component."
@@ -4767,6 +5218,9 @@
       "lbl" : "component process of",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "The inverse relation of has component process."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "The inverse relation of has component process."
@@ -4787,8 +5241,9 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A data item that is part of a drug-dispensing record and describes how much of some drug products have been dispensed to a patient."
-        }
+          "val" : "A data item that is part of a drug-dispensing record and describes the dispensing process, including how much of some drug products have been dispensed to a patient."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000042",
@@ -4816,7 +5271,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A process temporal characterization that is about a drug dispensing procedure."
+          "val" : "A temporal information that is a component of a drug dispensing record item that indicates that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the drug dispensing process described by the drug dispensing record item."
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
@@ -4844,7 +5299,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The total amount charged by a healthcare organization to payers to cover a drug dispensing procedure and related drug products."
+          "val" : "An information content entity that describes the total amount charged by a healthcare organization to payers to cover a drug dispensing procedure and related drug products."
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
@@ -4854,7 +5309,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The total amount actually paid from all payers to cover a drug dispensing procedure and related drug products."
+          "val" : "An information content entity that describes the total amount actually paid from all payers to cover a drug dispensing procedure and related drug products."
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
@@ -4864,13 +5319,10 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The amount paid by the payer to a pharmacy for the drug."
+          "val" : "An information content entity that describes the amount paid by the payer to a pharmacy for the drug."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
-          "val" : "This excludes the amount paid for dispensing the drug product."
-        } ]
+        "comments" : [ "This excludes the amount paid for dispensing the drug product." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PDRO_0000117",
@@ -4878,13 +5330,10 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The amount paid by the Payer to a pharmacy for dispensing a drug."
+          "val" : "An information content entity that describes the amount paid by the Payer to a pharmacy for dispensing a drug."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
-          "val" : "This excludes the amount paid for the drug product."
-        } ]
+        "comments" : [ "This excludes the amount paid for the drug product." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000052",
@@ -6030,32 +6479,48 @@
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000101"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000103"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000021",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000021",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000101"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000021",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000105"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000102"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000104"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000025",
       "pred" : "is_a",
@@ -6068,6 +6533,66 @@
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000030",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000100",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000101",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000102",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000103",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000104",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000105",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000125",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000125",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000125",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000127",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000125"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000127",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000129"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000128",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000125"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000128",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000130"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000129",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000130",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000003",
       "pred" : "is_a",
@@ -6331,19 +6856,27 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000055",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000055",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000055",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000102"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000056",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000056",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000056",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000103"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000060",
       "pred" : "is_a",
@@ -6389,9 +6922,53 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/HOSO_0000068"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000100",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000102",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000103",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000120",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000121",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000122",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000123",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000126"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000125",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/HOSO_0000010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000126",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HOSO_0000137",
       "pred" : "is_a",
@@ -6558,10 +7135,6 @@
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IOIO_0000001",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000001",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
       "obj" : "http://purl.obolibrary.org/obo/IOIO_0000005"
     }, {
@@ -6580,10 +7153,6 @@
       "sub" : "http://purl.obolibrary.org/obo/IOIO_0000003",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000003",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IOIO_0000003",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
@@ -6859,6 +7428,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000027",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000033"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000028",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
@@ -6912,7 +7485,7 @@
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000036",
-      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000067",
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000028"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000043",
@@ -6989,11 +7562,19 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PDRO_0000110",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PDRO_0000110",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/PDRO_0000041"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PDRO_0000111",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PDRO_0000111",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/PDRO_0000041"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PDRO_0000112",
       "pred" : "is_a",
@@ -7494,6 +8075,13 @@
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000001",
         "fillerId" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000012"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000036",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000067",
+        "fillerId" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000028"
       } ]
     }, {
       "definedClassId" : "http://www.ontologyrepository.com/CommonCoreOntologies/Agent",

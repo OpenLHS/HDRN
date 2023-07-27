@@ -35,9 +35,11 @@ build_docs:
 # Command for sparql report on subset
 
 
+#.PHONY: subset_reports
+#subset_reports: $(EDIT_PREPROCESSED) | $(REPORTDIR)
+#ifneq ($(SPARQL_EXPORTS_ARGS),)
+#	$(ROBOT) query --use-graphs true -i $(SUBSETDIR)/HDRNv1.owl $(SPARQL_SBST_EXPORTS_ARGS)
+#endif
 
-.PHONY: subset_reports
-subset_reports: $(EDIT_PREPROCESSED) | $(REPORTDIR)
-ifneq ($(SPARQL_EXPORTS_ARGS),)
-	$(ROBOT) query --use-graphs true -i $(SUBSETDIR)/HDRNv1.owl $(SPARQL_SBST_EXPORTS_ARGS)
-endif
+subset_reports:
+	$(ROBOT) query --use-graphs true -i $(SUBSETDIR)/HDRNv1.owl --query ../sparql/subset-report.sparql reports/subset-classes-report.csv
