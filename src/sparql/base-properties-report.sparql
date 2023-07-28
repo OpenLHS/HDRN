@@ -7,6 +7,6 @@ WHERE {
   ?property a owl:ObjectProperty .
   ?property rdfs:label ?value .
   OPTIONAL { ?property def: ?def }  .
-  FILTER regex(STR(?property), "HEPRO|NOYO|HOSO|PDRO")
+  FILTER regex(STR(?property), "HEPRO|OpenLHS|IOIO|HOSO|PDRO")
   }
 ORDER BY ?value

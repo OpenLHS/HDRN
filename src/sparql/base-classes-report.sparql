@@ -7,6 +7,6 @@ WHERE {
   ?cls a owl:Class .
   ?cls rdfs:label ?value .
   OPTIONAL { ?cls def: ?def }  .
-  FILTER regex(STR(?cls), "HEPRO|NOYO|HOSO|PDRO")
+  FILTER regex(STR(?cls), "HEPRO|OpenLHS|IOIO|HOSO|PDRO")
   }
 ORDER BY ?value
