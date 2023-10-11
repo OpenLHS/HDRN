@@ -12,7 +12,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HDRN/HDRN-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-08-19/HDRN-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-10-11/HDRN-base.owl"/>
         <dce:contributor>Jean-François Ethier</dce:contributor>
         <dce:contributor>Mark McGilchrist</dce:contributor>
         <dce:contributor>Paul Fabry</dce:contributor>
@@ -20,7 +20,7 @@
         <dcterms:description xml:lang="en">HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Health Data Research Network Ontology</dcterms:title>
-        <owl:versionInfo>2023-08-19</owl:versionInfo>
+        <owl:versionInfo>2023-10-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -47,6 +47,15 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HDRN#HDRNv1">
         <rdfs:comment xml:lang="en">First version of set of information items for Health data Research Network Canada</rdfs:comment>
         <rdfs:label xml:lang="en">HDRNv1</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot">
+        <rdfs:label xml:lang="en">OMOP-Pilot</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -134,6 +143,7 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HOSO_0000019">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HOSO_0000022">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
@@ -227,6 +237,10 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HOSO_0000060">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HOSO_0000062">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HOSO_0000068">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
@@ -269,8 +283,12 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HOSO_0000145">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000001">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000005">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000006">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
@@ -280,9 +298,18 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000011">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000014">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000015">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOYO_0000018">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
@@ -363,5 +390,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 

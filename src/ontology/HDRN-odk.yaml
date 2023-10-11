@@ -22,6 +22,7 @@ import_group:
 subset_group:
   products:
     - id: HDRNv1
+    - id: OMOP-Pilot
 robot_report:
   custom_sparql_exports:
     - base-classes-report
