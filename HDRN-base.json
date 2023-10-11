@@ -25,9 +25,9 @@
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-08-19"
+        "val" : "2023-10-11"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-08-19/HDRN-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-10-11/HDRN-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000010",
@@ -72,7 +72,7 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000019",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000022",
@@ -227,7 +227,12 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000060",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000062",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000068",
@@ -301,9 +306,14 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000001",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IOIO_0000005",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/IOIO_0000006",
@@ -318,12 +328,22 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/IOIO_0000011",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/IOIO_0000014",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000018",
@@ -460,6 +480,10 @@
       "meta" : {
         "comments" : [ "First version of set of information items for Health data Research Network Canada" ]
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot",
+      "lbl" : "OMOP-Pilot",
+      "type" : "PROPERTY"
     }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HDRN/imports/HOSO_import.owl>
-<http://purl.obolibrary.org/obo/HDRN/releases/2023-07-27/imports/HOSO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/HOSO/releases/2023-07-27/HOSO-full.owl>)
-Annotation(owl:versionInfo "2023-07-27")
+<http://purl.obolibrary.org/obo/HDRN/releases/2023-10-11/imports/HOSO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/HOSO/releases/2023-10-11/HOSO-full.owl>)
+Annotation(owl:versionInfo "2023-10-11")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -177,6 +177,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOIO_0000021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10239>))
@@ -3161,6 +3162,15 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000014> "hu
 EquivalentClasses(<http://purl.obolibrary.org/obo/IOIO_0000014> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IOIO_0000013> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)))
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000014> <http://purl.obolibrary.org/obo/IOIO_0000013>)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+
+# Class: <http://purl.obolibrary.org/obo/IOIO_0000015> (human biological sex statement)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000015> "A statement stating the biological sex of a human."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/IOIO_0000015> "A statement stating the biological sex of a human."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000015> "human biological sex statement"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000015> <http://purl.obolibrary.org/obo/SEPIO_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/IOIO_0000011>))
+SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/IOIO_0000014>))
 
 # Class: <http://purl.obolibrary.org/obo/IOIO_0000020> (human birth date)
 

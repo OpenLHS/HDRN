@@ -22,9 +22,9 @@
         "val" : "Health Data Research Network Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-08-19"
+        "val" : "2023-10-11"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-08-19/HDRN.json"
+      "version" : "http://purl.obolibrary.org/obo/HDRN/releases/2023-10-11/HDRN.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -2303,7 +2303,7 @@
         "definition" : {
           "val" : "An identifier that denotes a public provincial health insurance record."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000022",
@@ -2664,7 +2664,7 @@
         "definition" : {
           "val" : "An information content entity that contains the information required to manage the insurance coverage of an insured individual."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot", "http://purl.obolibrary.org/obo/HOSO#HOSO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000061",
@@ -2682,7 +2682,8 @@
       "meta" : {
         "definition" : {
           "val" : "A human that has a role of primary health insurance benificiary role"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HOSO_0000063",
@@ -3760,7 +3761,7 @@
         "definition" : {
           "val" : "A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot", "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Connor, John, born on 28/2/1985\n\nConnor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965"
@@ -3822,7 +3823,7 @@
         "definition" : {
           "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
@@ -3864,7 +3865,7 @@
         "definition" : {
           "val" : "A biological sex information content entity that denotes the biological sex of a human."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot", "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "A biological sex information content entity that denotes the biological sex of a human."
@@ -3908,10 +3909,24 @@
         "definition" : {
           "val" : "An organism identifier that denotes a particular human."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot", "http://purl.obolibrary.org/obo/IOIO#IOIO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
           "val" : "An organism identifier that denotes a particular human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "lbl" : "human biological sex statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A statement stating the biological sex of a human."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#HDRNv1", "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A statement stating the biological sex of a human."
         } ]
       }
     }, {
@@ -4006,6 +4021,7 @@
       "lbl" : "Homo sapiens",
       "type" : "CLASS",
       "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "Homo sapiens"
@@ -6146,6 +6162,10 @@
         "comments" : [ "First version of set of information items for Health data Research Network Canada" ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot",
+      "lbl" : "OMOP-Pilot",
+      "type" : "PROPERTY"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H",
       "lbl" : "HEPRO-H",
       "type" : "PROPERTY"
@@ -7233,6 +7253,18 @@
       "sub" : "http://purl.obolibrary.org/obo/IOIO_0000014",
       "pred" : "http://purl.obolibrary.org/obo/IAO_0000219",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SEPIO_0000174"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IOIO_0000020",
       "pred" : "is_a",
