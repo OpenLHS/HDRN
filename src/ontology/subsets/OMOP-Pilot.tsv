@@ -1,10 +1,10 @@
 ?x	?label
-_:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid106	
-_:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid114	
-_:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid119	
-_:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid133	
-_:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid89	
-_:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid98	
+_:B452bc4d2X2DffbfX2D40b7X2Dbf70X2D0e00b3625b9cgenid107	
+_:B452bc4d2X2DffbfX2D40b7X2Dbf70X2D0e00b3625b9cgenid115	
+_:B452bc4d2X2DffbfX2D40b7X2Dbf70X2D0e00b3625b9cgenid120	
+_:B452bc4d2X2DffbfX2D40b7X2Dbf70X2D0e00b3625b9cgenid136	
+_:B452bc4d2X2DffbfX2D40b7X2Dbf70X2D0e00b3625b9cgenid90	
+_:B452bc4d2X2DffbfX2D40b7X2Dbf70X2D0e00b3625b9cgenid99	
 <http://purl.obolibrary.org/obo/BFO_0000001>	"entity"
 <http://purl.obolibrary.org/obo/BFO_0000002>	"continuant"
 <http://purl.obolibrary.org/obo/BFO_0000003>	"occurrent"
@@ -16,6 +16,8 @@ _:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid98
 <http://purl.obolibrary.org/obo/BFO_0000023>	"role"
 <http://purl.obolibrary.org/obo/BFO_0000031>	"generically dependent continuant"
 <http://purl.obolibrary.org/obo/BFO_0000040>	"material entity"
+<http://purl.obolibrary.org/obo/HDRN_0000002>	"HDRN human biological sex information content entity"
+<http://purl.obolibrary.org/obo/HDRN_0000003>	"HDRN human birth temporal information"
 <http://purl.obolibrary.org/obo/HOSO_0000019>	"public provincial health identifier"
 <http://purl.obolibrary.org/obo/HOSO_0000060>	"public provincial health insurance record"
 <http://purl.obolibrary.org/obo/HOSO_0000061>	"primary health insurance beneficiary human role"
@@ -41,5 +43,7 @@ _:Bab78cd41X2De9d5X2D42d2X2D8fc6X2Da1c0d2b382acgenid98
 <http://purl.obolibrary.org/obo/OBI_0100026>	"organism"
 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000030>	"temporally qualifying statement"
 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>	"process temporally qualifying statement"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000054>	"specified value"
+<http://purl.obolibrary.org/obo/OpenLHS-Core_0000057>	"unit"
 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000065>	"temporal information"
 <http://purl.obolibrary.org/obo/SEPIO_0000174>	"statement"
