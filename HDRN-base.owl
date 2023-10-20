@@ -12,7 +12,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HDRN/HDRN-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-10-11/HDRN-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-10-20/HDRN-base.owl"/>
         <dce:contributor>Jean-François Ethier</dce:contributor>
         <dce:contributor>Mark McGilchrist</dce:contributor>
         <dce:contributor>Paul Fabry</dce:contributor>
@@ -20,7 +20,7 @@
         <dcterms:description xml:lang="en">HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Health Data Research Network Ontology</dcterms:title>
-        <owl:versionInfo>2023-10-11</owl:versionInfo>
+        <owl:versionInfo>2023-10-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -106,6 +106,98 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HDRN_0000001 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/HDRN_0000001">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000073"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">has HDRN date value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000073 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000073"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HDRN_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HDRN_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000011"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+        <rdfs:label xml:lang="en">HDRN human biological sex information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HDRN_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HDRN_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/HDRN_0000001"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+        <rdfs:label xml:lang="en">HDRN human birth temporal information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000005">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000054"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000054">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
+    </owl:Class>
     
 
 
@@ -286,19 +378,11 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000001">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000005">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000006">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000010">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000011">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000014">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
@@ -355,6 +439,9 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000025">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000057">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#OMOP-Pilot"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PDRO_0000041">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HDRN#HDRNv1"/>

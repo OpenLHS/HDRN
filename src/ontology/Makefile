@@ -54,7 +54,7 @@ OTHER_SRC =
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
-FORMATS = $(sort  owl json owl)
+FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
 RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base )
 
@@ -388,10 +388,6 @@ $(SUBSETDIR)/%.owl: $(ONT).owl | $(SUBSETDIR)
 .PRECIOUS: $(SUBSETDIR)/%.owl
 
 
-$(SUBSETDIR)/%.json: $(SUBSETDIR)/%.owl
-	$(ROBOT) convert --input $< --check false -f json -o $@.tmp.json &&\
-	mv $@.tmp.json $@
-
 
 # ---------------------------------------------
 # Sparql queries: Table exports / Query Reports
@@ -411,14 +407,6 @@ endif
 # ----------------------------------------
 
 
-$(ONT)-full.json: $(ONT)-full.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-		mv $@.tmp.json $@
-$(ONT)-base.json: $(ONT)-base.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-		mv $@.tmp.json $@
 # ----------------------------------------
 # Release artefacts: main release artefacts
 # ----------------------------------------
@@ -427,10 +415,6 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT).json: $(ONT).owl
-	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-		mv $@.tmp.json $@
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------
