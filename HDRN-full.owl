@@ -18,14 +18,14 @@
      xmlns:OpenLHS-Core="http://purl.obolibrary.org/obo/OpenLHS-Core#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HDRN/HDRN-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-10-20/HDRN-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HDRN/releases/2023-12-11/HDRN-full.owl"/>
         <dce:contributor>Jean-François Ethier</dce:contributor>
         <dce:contributor>Mark McGilchrist</dce:contributor>
         <dce:contributor>Paul Fabry</dce:contributor>
         <dcterms:description xml:lang="en">HDRN is an ontology about informational entities and processes relevant to the Health Data Reseach Network Canada.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Health Data Research Network Ontology</dcterms:title>
-        <owl:versionInfo>2023-10-20</owl:versionInfo>
+        <owl:versionInfo>2023-12-11</owl:versionInfo>
     </owl:Ontology>
     
 
